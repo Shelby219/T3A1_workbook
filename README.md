@@ -1,4 +1,4 @@
-# Your Name, T3A1, Flextrack, BRI|SYD|MEL
+# Shelby El-rassi, T3A1, Flextrack, MEL
 
 ## Q1 |Provide an overview and description of a standard source control process for a large project.
 
