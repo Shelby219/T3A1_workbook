@@ -33,7 +33,11 @@ In summary, this workflow is great for the large projects operating on a release
 
 
 #### [Sources]---
-1. [label](link)
+1. [label](https://www.wrike.com/project-management-guide/faq/why-should-i-use-version-control-in-project-management-software/)
+2. [label](https://www.automationworld.com/home/blog/13316896/configuration-management-and-version-control)
+3. [label](https://hackernoon.com/top-10-version-control-systems-4d314cf7adea)
+4. [label](https://nvie.com/posts/a-successful-git-branching-model/)
+5. [label](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 ---
 
