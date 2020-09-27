@@ -33,11 +33,11 @@ In summary, this workflow is great for the large projects operating on a release
 
 
 #### [Sources]---
-1. [Wrike](https://www.wrike.com/project-management-guide/faq/why-should-i-use-version-control-in-project-management-software/)
-2. [Automation World](https://www.automationworld.com/home/blog/13316896/configuration-management-and-version-control)
-3. [Hackernoon](https://hackernoon.com/top-10-version-control-systems-4d314cf7adea)
-4. [nvie](https://nvie.com/posts/a-successful-git-branching-model/)
-5. [Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+1. [Reference](https://www.wrike.com/project-management-guide/faq/why-should-i-use-version-control-in-project-management-software/)
+2. [Reference](https://www.automationworld.com/home/blog/13316896/configuration-management-and-version-control)
+3. [Reference](https://hackernoon.com/top-10-version-control-systems-4d314cf7adea)
+4. [Reference](https://nvie.com/posts/a-successful-git-branching-model/)
+5. [Reference](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 ---
 
@@ -71,14 +71,14 @@ Through the perspective of software engineering, software quality implications i
 
 
 #### [Sources]---
-1. [Reference 1](https://www.it-cisq.org/standards/code-quality-standards/)
-2. [Reference 2](https://www.it-cisq.org/coding-rules/index.htm)
-3. [Reference 3](https://en.wikipedia.org/wiki/Software_quality)
-4. [Reference 4](https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/)
-5. [Reference 5](https://www.sealights.io/software-quality/measuring-software-quality-a-practical-guide/)
-6. [Reference 6](https://www.altexsoft.com/blog/engineering/what-software-quality-really-is-and-the-metrics-you-can-use-to-measure-it/)
-7. [Reference 7](https://asq.org/quality-resources/software-quality)
-8. [Reference 8](https://www.perforce.com/blog/sca/what-code-quality-and-how-improve-code-quality#:~:text=Code%20quality%20defines%20code%20that,%2C%20bad%20%E2%80%94%20is%20all%20subjective.&text=Code%20that%20is%20considered%20high,for%20a%20web%20application%20developer.)
+1. [Reference](https://www.it-cisq.org/standards/code-quality-standards/)
+2. [Reference](https://www.it-cisq.org/coding-rules/index.htm)
+3. [Reference](https://en.wikipedia.org/wiki/Software_quality)
+4. [Reference](https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/)
+5. [Reference](https://www.sealights.io/software-quality/measuring-software-quality-a-practical-guide/)
+6. [Reference](https://www.altexsoft.com/blog/engineering/what-software-quality-really-is-and-the-metrics-you-can-use-to-measure-it/)
+7. [Reference](https://asq.org/quality-resources/software-quality)
+8. [Reference](https://www.perforce.com/blog/sca/what-code-quality-and-how-improve-code-quality#:~:text=Code%20quality%20defines%20code%20that,%2C%20bad%20%E2%80%94%20is%20all%20subjective.&text=Code%20that%20is%20considered%20high,for%20a%20web%20application%20developer.)
 
 
 ---
