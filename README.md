@@ -45,7 +45,7 @@ In summary, this workflow is great for the large projects operating on a release
 
 Through the perspective of software engineering, software quality implications involve two related, but separate concepts, these being;
 
-  ### Software functional quality, being the base product quality model.  ISO/IEC 25010 defines a set of eight software quality characteristics, measuring software through these aspects is to define what makes a product worthwhile amongst competitors and in relation to behaviour. These aspects are:
+- Software functional quality, being the base product quality model.  ISO/IEC 25010 defines a set of eight software quality characteristics, measuring software through these aspects is to define what makes a product worthwhile amongst competitors and in relation to behaviour. These aspects are:
 
   1.	Functional Suitability
   2.	Performance Efficiency
@@ -58,7 +58,7 @@ Through the perspective of software engineering, software quality implications i
 
 
 
-### Software structural quality, which is the quality-in-use model. By extracting from ISO standards, CISQ (Consortium for Information & Software Quality) defined quality aspects at a source code level in order to support the functional level qualities, but also enabling measurement of quality in meeting these function requirements this determining if the software works as intended. These four important aspects are all derived from the original eight and involve them all, just at a more specified functional level. These aspects are:
+- Software structural quality, which is the quality-in-use model. By extracting from ISO standards, CISQ (Consortium for Information & Software Quality) defined quality aspects at a source code level in order to support the functional level qualities, but also enabling measurement of quality in meeting these function requirements this determining if the software works as intended. These four important aspects are all derived from the original eight and involve them all, just at a more specified functional level. These aspects are:
 
   1.	Reliability: This is referring to the presence of consistent behaviour of software and the overall stability of the program in the event of unforeseen conditions. Errors should either be correct handled with no effect on the user, or no error occurrence at all. The user should never question the execution of the program. To summarise, reliability is the characteristic of resiliency and structural solidity. 
 
@@ -109,8 +109,22 @@ Through the perspective of software engineering, software quality implications i
 
 ## Q7 |Explain control flow, using an example from the JavaScript programming language.
 
+
+Control flow is the flow or order in which statements in a script are executed. Code is run line by line started from the first line then continuing until the whole code is implemented. Factors that alter the control flow are structures such as conditionals and loops. So overall control flow involves not just start to finish script reading, but the reading and analysing the overall structure of the program to determine order of execution dependant on how many instructions present that alternative the start to finish flow. 
+
+An example in JavaScript is when code execution reaches a control structure of a conditional if/else statement. A conditional statement is a set of instructions that executes if a specification is true. When the statement is reached the given expression is analysed and then chooses the direction the program takes based on if the logic is true or not. Else is an optional statement utilised to enable an alternate path.  In the example below, is the condition is true, statement 1 is executed, if the condition is false, statement 2 will be executed. 
+
+
+~~~
+    if (condition) {
+        statement_1;
+      } else {
+        statement_2;
+      }
+~~~
+
 #### [Sources]---
-1. [label](link)
+1. [Reference](https://developer.mozilla.org/en-US/docs/Glossary/Control_flow)
 ---
 
 ## Q8 |Explain type coercion, using examples from the JavaScript programming language.
