@@ -33,18 +33,54 @@ In summary, this workflow is great for the large projects operating on a release
 
 
 #### [Sources]---
-1. [label](https://www.wrike.com/project-management-guide/faq/why-should-i-use-version-control-in-project-management-software/)
-2. [label](https://www.automationworld.com/home/blog/13316896/configuration-management-and-version-control)
-3. [label](https://hackernoon.com/top-10-version-control-systems-4d314cf7adea)
-4. [label](https://nvie.com/posts/a-successful-git-branching-model/)
-5. [label](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+1. [Wrike](https://www.wrike.com/project-management-guide/faq/why-should-i-use-version-control-in-project-management-software/)
+2. [Automation World](https://www.automationworld.com/home/blog/13316896/configuration-management-and-version-control)
+3. [Hackernoon](https://hackernoon.com/top-10-version-control-systems-4d314cf7adea)
+4. [nvie](https://nvie.com/posts/a-successful-git-branching-model/)
+5. [Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 ---
 
 ## Q2 |What are the most important aspects of quality software?
 
+Through the perspective of software engineering, software quality implications involve two related, but separate concepts, these being;
+
+  ### Software functional quality, being the base product quality model.  ISO/IEC 25010 defines a set of eight software quality characteristics, measuring software through these aspects is to define what makes a product worthwhile amongst competitors and in relation to behaviour. These aspects are:
+
+  1.	Functional Suitability
+  2.	Performance Efficiency
+  3.	Compatibility
+  4.	Usability
+  5.	Reliability
+  6.	Security
+  7.	Maintainability
+  8.	Portability. 
+
+
+
+### Software structural quality, which is the quality-in-use model. By extracting from ISO standards, CISQ (Consortium for Information & Software Quality) defined quality aspects at a source code level in order to support the functional level qualities, but also enabling measurement of quality in meeting these function requirements this determining if the software works as intended. These four important aspects are all derived from the original eight and involve them all, just at a more specified functional level. These aspects are:
+
+  1.	Reliability: This is referring to the presence of consistent behaviour of software and the overall stability of the program in the event of unforeseen conditions. Errors should either be correct handled with no effect on the user, or no error occurrence at all. The user should never question the execution of the program. To summarise, reliability is the characteristic of resiliency and structural solidity. 
+
+  2.	Performance Efficiency: This is referring to how the software utilises resources and their execution time, amount of database calls and overall effect on program scalability, satisfaction and response times. The overall code architecture and design contributes to software efficiency. Additionally, is code compliance with best architecture and database practices. Overall, efficient code is fast, memory-efficient and consumes the fewest CPU cycles. 
+
+
+  3.	Security: This is referring to protection in the case of security risks and how well this is executed. The likelihood of attackers breaching the software, interrupt processes and gain access to restricted information is a measure of the security quality and how well the code architecture was formed and put into practice. The measurement of this aspect is via ‘vulnerabilities’, which are known issues possibility resulting in a breach, the ability to detect them, the amount of these vulnerabilities found and the gravity of them indicate the overall security level. Other factors also include the resolution time taken to fix an issue, deployment of security updates and the actual amount of full system breaches as opposed to just vulnerability checks. 
+
+  4.	Maintainability: This is referring to the ease in which software can be modified, utilised and adapted for alternative purposes and overall portability between environments and development teams. If compliance with software architecture practices and consistent high-quality code is produced across the board then easier streamlined maintenance is likely to be more achievable. Overall high-quality code is clean code that is consistent, easy to understand, well documented, is DRY, has good error handling and can be tested. 
+
+
 #### [Sources]---
-1. [label](link)
+1. [Reference 1](https://www.it-cisq.org/standards/code-quality-standards/)
+2. [Reference 2](https://www.it-cisq.org/coding-rules/index.htm)
+3. [Reference 3](https://en.wikipedia.org/wiki/Software_quality)
+4. [Reference 4](https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/)
+5. [Reference 5](https://www.sealights.io/software-quality/measuring-software-quality-a-practical-guide/)
+6. [Reference 6](https://www.altexsoft.com/blog/engineering/what-software-quality-really-is-and-the-metrics-you-can-use-to-measure-it/)
+7. [Reference 7](https://asq.org/quality-resources/software-quality)
+8. [Reference 8](https://www.perforce.com/blog/sca/what-code-quality-and-how-improve-code-quality#:~:text=Code%20quality%20defines%20code%20that,%2C%20bad%20%E2%80%94%20is%20all%20subjective.&text=Code%20that%20is%20considered%20high,for%20a%20web%20application%20developer.)
+
+
 ---
 
 ## Q3 |Outline a standard high level structure for a MERN stack application and explain the components.
