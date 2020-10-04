@@ -109,11 +109,9 @@ Through the perspective of software engineering, software quality implications i
 
 ## Q7 |Explain control flow, using an example from the JavaScript programming language.
 
-
 Control flow is the flow or order in which statements in a script are executed. Code is run line by line started from the first line then continuing until the whole code is implemented. Factors that alter the control flow are structures such as conditionals and loops. So overall control flow involves not just start to finish script reading, but the reading and analysing the overall structure of the program to determine order of execution dependant on how many instructions present that alternative the start to finish flow. 
 
 An example in JavaScript is when code execution reaches a control structure of a conditional if/else statement. A conditional statement is a set of instructions that executes if a specification is true. When the statement is reached the given expression is analysed and then chooses the direction the program takes based on if the logic is true or not. Else is an optional statement utilised to enable an alternate path.  In the example below, is the condition is true, statement 1 is executed, if the condition is false, statement 2 will be executed. 
-
 
 ```js
     if (condition) {
@@ -151,12 +149,10 @@ Adding a string to a number will always result in a string. A reverse of the abo
 
 These snippets are in themselves simple examples of Type Coercion, by they do show the way JavaScript when it is executing the code will even out the datatypes and cast them automatically to enable to operator to work. 
 
-
-
 #### [Sources]---
-1. [Reference 1](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
-2. [Reference 2](https://www.w3schools.com/js/js_type_conversion.asp)
-3. [Reference 3](https://hackernoon.com/understanding-js-coercion-ff5684475bfc)
+1. [Reference](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
+2. [Reference](https://www.w3schools.com/js/js_type_conversion.asp)
+3. [Reference](https://hackernoon.com/understanding-js-coercion-ff5684475bfc)
 
 ---
 
@@ -183,15 +179,15 @@ There are many other built-in JavaScript objects that come in the form of a stan
   -	Math
   -	Set
 
-
-
 #### [Sources]---
-1. [Reference 1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-2. [Reference 2](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
-3. [Reference 3](https://www.programiz.com/javascript/data-types)
+1. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+2. [Reference](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
+3. [Reference](https://www.programiz.com/javascript/data-types)
 ---
 
 ## Q10 |Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language.
+
+
 
 #### [Sources]---
 1. [label](link)
