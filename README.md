@@ -162,8 +162,33 @@ These snippets are in themselves simple examples of Type Coercion, by they do sh
 
 ## Q9 |Explain data types, using examples from the JavaScript programming language.
 
+Data types like in any programming language tell the characteristic of a piece of data; this is conveyed to the compiler so that is can perform the applicable operation.  In JavaScript data types can include primitive, which means these data types are immutable or unchangeable, and non-primitive or objects which are collections of properties in data usually referenced by an identifier. Objects are not immutable as they can have properties added and removed. The value properties in an object can be of any type, also including other objects, so this enables the creation of complex data structures. 
+
+### Primitives
+  -	Boolean: This type is representative as a logical entity, either the value true or the value false. Other data type values such as NaN, null and undefined are by definition a falsey value along with false, 0 and an empty string. All other values truthy by nature.  
+  -	Null: This value is representative of empty, or the intentional absence of a value. 
+  -	Undefined: This value is utilised when a variable has not been assigned a value yet, by default it becomes undefined. 
+  -	Number: Number is representative of numeric values. JavaScript is different to other languages in that it cannot distinct automatically an integer and float. So technically the type only has one integer, this being 0 and all other numbers are represented as a double-precision 64-bit floating point format. Other languages will know to round to the ideal representation, this is not the case for JavaScript. That is why methods like .round() exist in JavaScript to enable the rounding of integers. The number type can also including +Infinitity, -infinity and NaN(not a number).
+  -	BigInt: A BigInt is representative of an integer with arbitrary precision, it is also numeric in nature. This value is utilised to store and operator on large integers safely when they go beyond the double-precision floating-point number range.  
+  -	String: A string is representative of textual data and comes in the form of a string of characters. JavaScript strings are immutable in that once created; they are unmodifiable directly. However, utilising .substr() to pick individual letters or .concat() to concatenate two strings together are alternatives to ‘modifying’ a string.
+  -	Symbol: A symbol is representative of a unique and immutable value, such as the key in a JavaScript object. 
+
+### Objects (non-primitive)
+
+  -	Object: A object in JavaScript is representing of key,value pairs which are a list of xero or more property names and corresponding values, which are enclosed in curly braces. 
+  -	Array: Arrays are also by definition objects, however they relationship differs in that the key is the integer set index paired with the length property of the array. 
+
+There are many other built-in JavaScript objects that come in the form of a standard library, an example of these are:
+  -	Error
+  -	Math
+  -	Set
+
+
+
 #### [Sources]---
-1. [label](link)
+1. [Reference 1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+2. [Reference 2](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
+3. [Reference 3](https://www.programiz.com/javascript/data-types)
 ---
 
 ## Q10 |Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language.
