@@ -129,8 +129,35 @@ An example in JavaScript is when code execution reaches a control structure of a
 
 ## Q8 |Explain type coercion, using examples from the JavaScript programming language.
 
+Type Coercion is the automatic or implicit conversion process of converting a value from one type to another type. Such as a string to a number. Adjacent to type coercion is type conversion, which is explicit conversion of data types, which involves the explicit requiring of a conversion to take place rather than automatic as aforementioned. 
+
+An example of this is the toString() method, which can return a converting number to a string as shown below. In this snippet to code is specifically calling a method of conversion on the number 15 which then results in a string 15. 
+
+  ~~~
+  (15).toString() //=> “15”
+  ~~~
+
+Type Coercion has differences to Conversion. Coercion is the term used when unexpected type casting happens in JavaScript. Coercion of a data type is often a side effect of different operations. For example, like the code shown above of a number to a string, a type coercion version of the same example would be:
+
+  ~~~
+  15 + “” //=> “15”
+  ~~~
+
+Adding a string to a number will always result in a string. A reverse of the above example, coercing a string to be a number is below. In this example using the “-“ operator means JavaScript will cast the values to be numbers.
+
+  ~~~
+  “15” - 1 //=> 14
+  ~~~
+
+These snippets are in themselves simple examples of Type Coercion, by they do show the way JavaScript when it is executing the code will even out the datatypes and cast them automatically to enable to operator to work. 
+
+
+
 #### [Sources]---
-1. [label](link)
+1. [Reference 1](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
+2. [Reference 2](https://www.w3schools.com/js/js_type_conversion.asp)
+3. [Reference 3](https://hackernoon.com/understanding-js-coercion-ff5684475bfc)
+
 ---
 
 ## Q9 |Explain data types, using examples from the JavaScript programming language.
