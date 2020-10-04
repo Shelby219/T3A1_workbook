@@ -115,13 +115,13 @@ Control flow is the flow or order in which statements in a script are executed. 
 An example in JavaScript is when code execution reaches a control structure of a conditional if/else statement. A conditional statement is a set of instructions that executes if a specification is true. When the statement is reached the given expression is analysed and then chooses the direction the program takes based on if the logic is true or not. Else is an optional statement utilised to enable an alternate path.  In the example below, is the condition is true, statement 1 is executed, if the condition is false, statement 2 will be executed. 
 
 
-~~~
+```js
     if (condition) {
         statement_1;
       } else {
         statement_2;
       }
-~~~
+```
 
 #### [Sources]---
 1. [Reference](https://developer.mozilla.org/en-US/docs/Glossary/Control_flow)
@@ -133,21 +133,21 @@ Type Coercion is the automatic or implicit conversion process of converting a va
 
 An example of this is the toString() method, which can return a converting number to a string as shown below. In this snippet to code is specifically calling a method of conversion on the number 15 which then results in a string 15. 
 
-  ~~~
+  ```js
   (15).toString() //=> “15”
-  ~~~
+   ```
 
 Type Coercion has differences to Conversion. Coercion is the term used when unexpected type casting happens in JavaScript. Coercion of a data type is often a side effect of different operations. For example, like the code shown above of a number to a string, a type coercion version of the same example would be:
 
-  ~~~
+  ```js
   15 + “” //=> “15”
-  ~~~
+  ```
 
 Adding a string to a number will always result in a string. A reverse of the above example, coercing a string to be a number is below. In this example using the “-“ operator means JavaScript will cast the values to be numbers.
 
-  ~~~
+  ```js
   “15” - 1 //=> 14
-  ~~~
+  ```
 
 These snippets are in themselves simple examples of Type Coercion, by they do show the way JavaScript when it is executing the code will even out the datatypes and cast them automatically to enable to operator to work. 
 
