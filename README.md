@@ -293,12 +293,34 @@ let letters = [ "a", "b", "c", "d"];
 console.log(letters.slice(1,3)) // ["b, c"]
 ```
 
+### Powerful array methods allowing callbacks
+### map(), filter(). reduce(), every(), some()
+
+These powerful are very useful in programming as they allow executing of a callback function on each item in array, however they all operate uniquely.
+
+map() is a very open ended method is that is operates by returning a new array of elements which have had the callback executed on them.
+
+filter() operates by returning a new array of elements in which the callback returned true.
+
+reduce() operates by returning single output value due to a 'reducer' callback function being executed on each element in the array. The purpose of this method is to reduce the collection down to the desired specified value. As in the example below, the parameters are the callback(which is executed on each element except the first if no initial value is specified), accumulator takes the return value and as the name suggests accumulates a running value, current value is the particular element being processed in the first iteration, index is the index of the element being processed and is option and finally the array is the array reduce was called upon. Initial value is an optional value which can be utilised with the first argument. 
+
+```js
+arr.reduce(callback( accumulator, currentValue[, index[, array]] ) {
+  // return result from executing something for accumulator or currentValue
+}[, initialValue]);
+
+```
+
+every() operates by returning a value of true if the callback returns true for all array elements.
+
+some() operates by returning true if the callback returns true for at least one array element. 
 
 
 #### [Sources]---
 1. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 2. [Reference](https://dev.to/thomasaudo/advanced-array-manipulation-in-javascript--fhi)
 3. [Reference](https://www.elated.com/manipulating-javascript-arrays/)
+4. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 ---
 
 ## Q11 |Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language.
