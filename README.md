@@ -172,7 +172,7 @@ Data types like in any programming language tell the characteristic of a piece o
 ### Objects (non-primitive)
 
   -	Object: A object in JavaScript is representing of key,value pairs which are a list of xero or more property names and corresponding values, which are enclosed in curly braces. 
-  -	Array: Arrays are also by definition objects, however they relationship differs in that the key is the integer set index paired with the length property of the array. 
+  -	Array: Arrays are also by definition objects, however their relationship differs in that the key is the integer set index paired with the length property of the array. 
 
 There are many other built-in JavaScript objects that come in the form of a standard library, an example of these are:
   -	Error
@@ -187,10 +187,118 @@ There are many other built-in JavaScript objects that come in the form of a stan
 
 ## Q10 |Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language.
 
+JavaScript arrays are by definition JavaScript objects, with a key being the integer set index paired with the value being the length property of the array. This enables data to be stored in array in an adjacent fashion. Arrays are not immutable, meaning the elements are not fixed as in without the ability to be changed. This means an arrays length is able to be altered at any point, because of this an array can be empty or it can be of great substance, depending of the needs of the program.
+Array methods which allow for this alteration of length are methods which enable operations of traverse and mutative nature. Below are examples of array manipulation methods. 
+
+### Adding and Removing Array Elements
+### unshift(), shift(), push(), pop() and splice()
+
+These powerful array methods operate by allowing to add or remove specific array elements. These methods are powerful as they do not return a new array, rather alter the original array.
+
+#### unshift(), shift()
+
+unshift() operates by taking the given value and adding it/them to the start of the array and then returns the altered original arrays length. 
+
+```js
+let letters = [ "a", "b" ];
+let newLength = letters.unshift ( "c", "d" );
+console.log(letters);    //"c,d,a,b"
+console.log(newLength); //"4"
+```
+
+shift() operates removing the first element in the array and then returning it. 
+
+```js
+let letters = [ "c","d", "a", "b" ];
+let letter = letters.shift ();
+console.log(letters);    //"d,a,b"
+console.log(letter); //"c"
+```
+
+#### push(), pop()
+
+push() operates by taking the given value and adding it/them to the start of the array and then returns the altered original arrays length. 
+
+```js
+let letters = [ "a", "b" ];
+let newLength = letters.push ( "c", "d" );
+console.log(letters);   // "a,b,c,d"
+console.log(newLength); //"4"
+```
+
+pop() operates removing the last element in the array and then returning it. 
+
+```js
+let letters = [ "a", "b", "c", "d"];
+let letter = letters.pop ();
+console.log(letters);  // "a,b,c"
+console.log(letter); //"d"
+```
+
+#### splice()
+
+splice() operates removing an element or elements from an original array with the option to replace them (the replacement parameters are not required if only removing). The return of this methods is the elements that were removed from the array. The parameters for splice are the index to which start removing/adding (below it is index 1), the second parameters is the number of elements desired for removal(below it is 2), then the optional third parameter is the replacement elements(below we have no arguments).
+
+```js
+let letters = [ "a", "b", "c", "d"];
+let removedLetters = letters.splice ( 1, 2 );
+console.log(letters);   // "a, d"
+console.log(removedLetters); //"b, c"
+```
+
+### Array conversion to a string
+### toString(), join()
+
+In programming conversion of an array to a string is a very useful tool, often utilised when wanting to display data held in an array. The below JavaScript methods both produce strings. 
+
+ 
+#### toString()
+
+toString() operates by converting an array to a long string, with the automatic use of a comma as a separator 
+
+```js
+let letters = [ "a", "b", "c", "d"];
+console.log(letters.toString()); //"a, b, c, d"
+```
+#### join()
+
+join() operates by converting an array to a long string except it has the ability to use an alternate separator instead of a comma. If no alternate separator is specified a comma will be utilised automatically. 
+
+```js
+let letters = [ "a", "b", "c", "d"];
+console.log(letters.join()); //"a, b, c, d"
+console.log(letters.join("*")); //"a * b * c * d"
+```
+
+### Multiple Array Joining
+### concat()
+
+concat() operates by processing the joining of two arrays and the return is the resulting new array. The method enables to original arrays to remain unchanged. 
+
+```js
+let letters = [ "a", "b", "c", "d"];
+let numbers = [ "1", "2", "3", "4"];
+let lettersAndNumbers = letters.concat(numbers)
+console.log(lettersAndNumbers) //["a", "b", "c", "d","1", "2", "3", "4"]
+
+```
+
+### Array Extraction
+### slice()
+
+slice() operates by removing a specific section of an array and returning it as a new array. The method operates by specifying a start index and an up to index. 
+
+```js
+let letters = [ "a", "b", "c", "d"];
+console.log(letters.slice(1,3)) // ["b, c"]
+```
+
 
 
 #### [Sources]---
-1. [label](link)
+1. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+2. [Reference](https://dev.to/thomasaudo/advanced-array-manipulation-in-javascript--fhi)
+3. [Reference](https://www.elated.com/manipulating-javascript-arrays/)
 ---
 
 ## Q11 |Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language.
