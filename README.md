@@ -305,9 +305,9 @@ filter() operates by returning a new array of elements in which the callback ret
 reduce() operates by returning single output value due to a 'reducer' callback function being executed on each element in the array. The purpose of this method is to reduce the collection down to the desired specified value. As in the example below, the parameters are the callback(which is executed on each element except the first if no initial value is specified), accumulator takes the return value and as the name suggests accumulates a running value, current value is the particular element being processed in the first iteration, index is the index of the element being processed and is option and finally the array is the array reduce was called upon. Initial value is an optional value which can be utilised with the first argument. 
 
 ```js
-arr.reduce(callback( accumulator, currentValue[, index[, array]] ) {
-  // return result from executing something for accumulator or currentValue
-}[, initialValue]);
+  arr.reduce(callback( accumulator, currentValue[, index[, array]] ) {
+    // return result from executing something for accumulator or currentValue
+  }[, initialValue]);
 
 ```
 
