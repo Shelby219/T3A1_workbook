@@ -171,7 +171,7 @@ Data types like in any programming language tell the characteristic of a piece o
 
 ### Objects (non-primitive)
 
-  -	Object: A object in JavaScript is representing of key,value pairs which are a list of xero or more property names and corresponding values, which are enclosed in curly braces. 
+  -	Object: A object in JavaScript is representing of key,value pairs which are a list of zero or more property names and corresponding values, which are enclosed in curly braces. 
   -	Array: Arrays are also by definition objects, however their relationship differs in that the key is the integer set index paired with the length property of the array. 
 
 There are many other built-in JavaScript objects that come in the form of a standard library, an example of these are:
@@ -331,8 +331,26 @@ some() operates by returning true if the callback returns true for at least one 
 
 ## Q12 |Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language.
 
+JSON (JavaScript Object Notation) is a format for data storage and transportation that is lightweight, easily understandable as it uses human-readable text consisting of key-value pairs that can include JavaScript data types such as strings, numbers, arrays, Booleans and object literals. Whilst it resembles JavaScript object literal syntax it is a very common data format often utilised diversely amongst applications that include code that can generate and parse JSON. Commonly utilised for transmitting data across a network from web server to webpage. In this process JSON exists as a string, that requires conversion to a JavaScript object for data accessibility, this act is called deserialization. This static method is:
+
+```js
+JSON.parse(text)
+
+```
+
+This method enables the JSON string text to be parsed/transformed into a JavaScript object and the value gets returned. Once parsed the object returned will obtained all the object methods inbuilt for JavaScript. 
+
+In order to then send JSON objects over a network they correspondingly have to be transformed to a JSON string text. This static method of serialization is:
+
+```js
+JSON.stringify(value)
+```
+This method returns a JSON string which consists of the given parameter object value. 
+
 #### [Sources]---
-1. [label](link)
+1. [Reference](https://en.wikipedia.org/wiki/JSON)
+2. [Reference](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+3. [Reference](https://www.w3schools.com/whatis/whatis_json.asp)
 ---
 
 ## Q13 |For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes.
