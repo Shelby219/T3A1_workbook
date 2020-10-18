@@ -331,10 +331,16 @@ some() operates by returning true if the callback returns true for at least one 
 
 ## Q12 |Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language.
 
-JSON (JavaScript Object Notation) is a format for data storage and transportation that is lightweight, easily understandable as it uses human-readable text consisting of key-value pairs that can include JavaScript data types such as strings, numbers, arrays, Booleans and object literals. Whilst it resembles JavaScript object literal syntax it is a very common data format often utilised diversely amongst applications that include code that can generate and parse JSON. Commonly utilised for transmitting data across a network from web server to webpage. In this process JSON exists as a string, that requires conversion to a JavaScript object for data accessibility, this act is called deserialization. This static method is:
+JSON (JavaScript Object Notation) is a format for data storage and transportation that is lightweight, easily understandable as it uses human-readable text consisting of key-value pairs that can include JavaScript data types such as strings, numbers, arrays, Booleans and object literals. Some key notes about the JSON object is the syntax requires name/value pairs to be double quoted, with correct comma’s, within curly brackets for objects and arrays must be in square brackets. Null is allowed in JSON however NaN and infinity are not supported, JSON strings can be empty, but undefined is not permitted, and irrelevant whitespace is permitted anywhere except within a number or a string. 
+Whilst it resembles JavaScript object literal syntax it is a very common data format often utilised diversely amongst applications that include code that can generate and parse JSON. Commonly utilised for transmitting data across a network from web server to webpage. In this process JSON exists as a string, that requires conversion to a JavaScript object for data accessibility, this act is called deserialization. This static method is:
+
 
 ```js
-JSON.parse(text)
+JSON.parse(text,[reviver])
+
+let jsonObj = '{"foo": 1, "bar": 2, "abc": "abc" }'
+JSON.parse(jsonObj) 
+console.log(jsonObj)//  {"foo": 1, "bar": 2, "abc": "abc" }
 
 ```
 
@@ -343,7 +349,12 @@ This method enables the JSON string text to be parsed/transformed into a JavaScr
 In order to then send JSON objects over a network they correspondingly have to be transformed to a JSON string text. This static method of serialization is:
 
 ```js
-JSON.stringify(value)
+JSON.stringify (value[, replacer[, space]])
+
+let obj = {"foo": 1, "bar": 2, "abc": "abc" }
+JSON.stringify(obj) 
+console.log(obj)//  '{"foo": 1, "bar": 2, "abc": "abc" }'
+
 ```
 This method returns a JSON string which consists of the given parameter object value. 
 
@@ -351,6 +362,7 @@ This method returns a JSON string which consists of the given parameter object v
 1. [Reference](https://en.wikipedia.org/wiki/JSON)
 2. [Reference](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
 3. [Reference](https://www.w3schools.com/whatis/whatis_json.asp)
+3. [Reference](https://levelup.gitconnected.com/manipulating-json-strings-in-javascript-5c9423841fa3#:~:text=In%20JavaScript%2C%20there's%20a%20JSON,JavaScript%20objects%20and%20JSON%20strings.)
 ---
 
 ## Q13 |For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes.
