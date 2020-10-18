@@ -356,7 +356,7 @@ JSON.stringify(obj)
 console.log(obj)//  '{"foo": 1, "bar": 2, "abc": "abc" }'
 
 ```
-This method returns a JSON string which consists of the given parameter object value. 
+This method returns a JSON string which consists of the given parameter object value. There are optional parameters that can be used for specifying only certain properties to be stringified and/or replacing certain property values 
 
 #### [Sources]---
 1. [Reference](https://en.wikipedia.org/wiki/JSON)
