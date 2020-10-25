@@ -413,6 +413,24 @@ console.log(countKeys) //=> 3
 
 ```
 
+for…in loop is a useful method however it returns based off the original protoype chain. In order to iterate on an object so that all JavaScript methods can be utilised on the object other enumerating iteration methods that will not affect the original object are useful. Object.entries() is a method that can be applied on an object that will return an array of key,value pairs. Similarly, Object.keys() returns a new array of the object’s keys
+
+```js
+const iterationObject2 = {prop1: “val1”, prop2: “val2”, prop3: “val3”};
+Object.keys(iterationObject2)
+//=> [“prop1”, “prop2”, “prop3”]
+
+```
+
+### Copying:
+
+To deep copy an object using JSON.stringify and JSON.parse. This works by making the original object into a new string, then transforming it into an object again and assigning it to a variable. Therefore becoming a new object. This process however only works on plain objects, meaning the object cannot contain other code like functions.
+
+```js
+const copyObject = {prop1: “val1”, prop2: “val2”, prop3: “val3”};
+const newCopyObject = JSON.parse(JSON.stringify(copyObject)) 
+
+```
 
 #### [Sources]---
 1. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
