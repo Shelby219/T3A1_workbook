@@ -325,8 +325,100 @@ some() operates by returning true if the callback returns true for at least one 
 
 ## Q11 |Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language.
 
+An object in JavaScript is a data structure of key, value pairs which are a list of zero or more property names and corresponding property values, which are enclosed in curly braces. Objects are integral in JavaScript as they allow for encapsulation of data, functions and other objects into one accessible and manipulatable entity. 
+
+### Creation:
+
+Creation of an object can be done via an object literal, also called Object Initializer which is defining and initializing an object via directly stating. These literal objects are expressions, and results in a new object whenever the statement is executed. Below is an example: 
+
+```js
+// Initialize object literal with curly brackets
+const objectLiteral = {};
+const objectLiteral2 = {prop1: val1, prop2: val2};
+```
+
+The assigning of the object to the variable is not required, however is needed when the object is to be referred to elsewhere. As per the first example an object can be initialized empty. 
+
+Creation of an object can also be done via an object constructor which is creation of an object via the new keyword. Below are examples:
+
+```js
+// Initialize object constructor with new Object
+const objectConstructor = new Object();
+const objectConstructor2 = new Object();
+objectConstructor2.prop1 = “val1”;
+objectConstructor2.prop2 = “val2”;
+```
+
+In these examples, an object can constructor can initialize an empty object, then you are able to populate the object via dot notation. The object constructor is also useful in creating a constructor function to be able to create multiple objects with the same properties without needed to literally state them all. 
+
+### Accessing:
+
+Accessing the properties of objects can be done via dot notation in which the object name is entered first, then a dot, then the property requiring access. Similarly, when accessing a function within an object brackets are needed to call the function. 
+
+```js
+const dotObject = {prop1: “val1”, prop2: “val2”, ”, prop3: function() {
+return “hello there”};
+dotObject.prop1 //=> “val1”
+dotObject.prop3() //=> “hello there”
+```
+
+Accessing an object is also possible via bracket notation which is similar to array accessibility. However, in this situation, the property is used to select a value. This method is useful for dynamic accessibility, accessing property names which are alternative to standard name creation, and using an object as a dictionary. 
+
+```js
+const bracketObject = {prop1: “val1”, prop2: “val2”};
+bracketObject [prop1] //=> “val1”
+```
+### Changing:
+
+Using object accessibility, object values are able to be changed/overwritten.
+
+```js
+const changeObject = {prop1: “val1”, prop2: “val2”};
+changeObject.prop1 = “newval1”
+```
+
+### Adding:
+
+Using object accessibility, object values are able to be added.
+
+```js
+const changeObject = {prop1: “val1”, prop2: “val2”};
+changeObject.prop3 = “val3”
+```
+
+### Deleting:
+
+Deleting from an object is done via utilising the delete keyword. Delete returns true is the removal was successful.
+
+```js
+
+const delObject = {prop1: “val1”, prop2: “val2”};
+delete delObject.prop1 //=> true
+console.log(delObject) //=> {prop2: “val2”};
+```
+
+
+### Iteration:
+
+Using a specific for loop in JavaScript objects are able to be iterated through without knowing particular property names. The below example shows this via counting all the keys in the example object. 
+
+```js
+const iterationObject = {prop1: “val1”, prop2: “val2”, prop3: “val3”};
+
+let countKeys = 0
+for(let key in iterationObject) { 
+    countKeys++;
+};
+console.log(countKeys) //=> 3
+
+```
+
+
 #### [Sources]---
-1. [label](link)
+1. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+2. [Reference](https://www.digitalocean.com/community/tutorials/understanding-objects-in-javascript)
+3. [Reference](https://www.javascripttutorial.net/javascript-objects/)
+4. [Reference](link)
 ---
 
 ## Q12 |Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language.
