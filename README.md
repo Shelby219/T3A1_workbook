@@ -48,14 +48,13 @@ Through the perspective of software engineering, software quality implications i
 - Software functional quality, being the base product quality model.  ISO/IEC 25010 defines a set of eight software quality characteristics, measuring software through these aspects is to define what makes a product worthwhile amongst competitors and in relation to behaviour. These aspects are:
 
   1.	Functional Suitability
-  2.	Performance Efficiency
+  2.	Performance Efficiency*
   3.	Compatibility
   4.	Usability
-  5.	Reliability
-  6.	Security
-  7.	Maintainability
+  5.	Reliability*
+  6.	Security*
+  7.	Maintainability*
   8.	Portability. 
-
 
 
 - Software structural quality, which is the quality-in-use model. By extracting from ISO standards, CISQ (Consortium for Information & Software Quality) defined quality aspects at a source code level in order to support the functional level qualities, but also enabling measurement of quality in meeting these function requirements this determining if the software works as intended. These four important aspects are all derived from the original eight and involve them all, just at a more specified functional level. These aspects are:
@@ -63,7 +62,6 @@ Through the perspective of software engineering, software quality implications i
   1.	Reliability: This is referring to the presence of consistent behaviour of software and the overall stability of the program in the event of unforeseen conditions. Errors should either be correct handled with no effect on the user, or no error occurrence at all. The user should never question the execution of the program. To summarise, reliability is the characteristic of resiliency and structural solidity. 
 
   2.	Performance Efficiency: This is referring to how the software utilises resources and their execution time, amount of database calls and overall effect on program scalability, satisfaction and response times. The overall code architecture and design contributes to software efficiency. Additionally, is code compliance with best architecture and database practices. Overall, efficient code is fast, memory-efficient and consumes the fewest CPU cycles. 
-
 
   3.	Security: This is referring to protection in the case of security risks and how well this is executed. The likelihood of attackers breaching the software, interrupt processes and gain access to restricted information is a measure of the security quality and how well the code architecture was formed and put into practice. The measurement of this aspect is via ‘vulnerabilities’, which are known issues possibility resulting in a breach, the ability to detect them, the amount of these vulnerabilities found and the gravity of them indicate the overall security level. Other factors also include the resolution time taken to fix an issue, deployment of security updates and the actual amount of full system breaches as opposed to just vulnerability checks. 
 
@@ -96,6 +94,41 @@ Through the perspective of software engineering, software quality implications i
 ---
 
 ## Q5 |With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges.
+
+During week commencing the 19th of October as part of the Coder Academy curriculum myself and my classmates all participated in an Express JS hackathon. The briefing was:
+-	2 Developers per team.
+-	Develop a solution to a problem of choice with a chosen theme.
+-	The application must have:
+  -	Server-side: Express and Mongo
+  -	Client-side: HTML/CSS/JavaScript that requests the server and manages sent data. 
+-	Git Workflow utilisation
+
+In the process of this project myself and my partner needed a wide variety of knowledge and skills. These being:
+
+-	Git Workflow: For our Git workflow we decided on a forking workflow. This involved having a clear core understanding of the workflow and the processes and order of action, we both agreed we had. This was determined at the beginning stages of the Hackathon and a repository was set up immediately and forked by my partner. Setting up this workflow at the beginning and talking through the process gave us both a clear understanding of what we needed to do whilst working on particular area/features of the project. We were able to work on separate feature branches, then merge them into the main with very minimal merge conflicts due to keeping our communication front and centre in the Hackathon process. This meant during the timeframe the Git Workflow did not cause any issues or interruptions, which gave us the opportunity to focus on the application. 
+-	Planning and documentation: The start of the project involved some initial planning which was done on a simple google doc. This involved talking through ideas and research and noting them down to form a basis of our application idea. Once an idea and them was decided we set up a Trello board to implement a basic, but clear development plan for the 2.5days of coding. For this process to be successful we needed to have a good planning focus and methodology in which we could outline an implementation plan. This ability is what gave the Hackathon a direction to work towards. Contained in the Trello board were cards for the Server and client-side work, cards for doing done and a backlog. Additionally, a card for some user story outlining proved useful for reference. A nice to have card was added when we determined certain features and components were better on this card given the short time frame. Whilst usually more detailed mock-ups and wireframes we accompany planning, we still implemented a simple wireframe for the main application dashboard, this enabled direction for the front-end creation. Knowledge of creating wireframes was necessary, and Figma was the tool of choice in this process. 
+-	MVC File Structure: Knowledge of the MVC architecture was required in this build process. This framework was the core architectural pattern of the application component separation. These being the Model, Views and Controller. The Model is the part of the application dealing and interacting with the database, the view is presenting of the data rendered on a user interface, and the Controller is the glue between Model and View where we can request data from our database(via the model) and then send a response to our view. Understanding the way this architecture works and operates together was required. In addition, another architecture component for an Express App was the Utilities, in order to keep our controller from getting to inflated, keeping logic in the utilities was beneficial. 
+-	CRUD application concepts: The type of application created in this Hackathon was a CRUD application. Knowledge of CRUD (Create, Read, Update, Delete) functions and paired with the corresponding HTTP request was needed. This required an understanding of HTTP routing and requests.  
+-	Server-side: A good knowledge basis for the following was required in order the create our server-side code. 
+  -	Express: Web framework for Node
+  -	Middleware: This component of the application is any code running in the middle of the application, knowledge of the code required as middleware and implanting it was needed. Some of the Middleware used was cors, passport, cookie-parser, connect-mongo and express session. Knowing how to define our own middleware was useful as well as this allowed us to set up authentication methods in place for our user authentication.  
+  -	Node: Understanding the basis of Node as a web server to process and deliver our data was needed and how these requests and responses were operating with routing. 
+  -	Node Packages: These packages were utilised for a variety of application components, knowledge of using node packages and setting up the initializing of them was needed. 
+  -	MongoDb: NoSQL database. Knowledge of NoSQL databases proved assisting in utilised MongoDB as the document database. Understanding how to query the database and the methods to go about this was needed.
+  -	Mongoose: In order to persist the data in our Mongo database Mongoose was integrated. Understanding the creation of Model via a Mongoose Schema and how to define a Schema was needed, along with how to query the DB via Mongoose.  
+  -	View Rendering: Implementation of a rendering engine was needed to render our data to a user interface. Whilst Express-Handlebars were the initial rendering engine outlined, Pug JS was implemented due to its concise and clean structure. Understanding how to send the data to the view for rendering was needed, additional was implementation of adding styling to the Pug files. 
+  -	Overall Plumbing: Implementing the basis plumbing and set up for the above components was needed for this application. An idea of their interaction and base set up is important, especially for troubleshooting if errors came along. 
+
+-	Client-side
+  -	HTML/CSS: Knowledge of employing CSS for styling was required. Additionally, Bootstrap a styling framework was used to speed up the styling process of the front end due to time constraints. Knowledge of implementing this framework and the classes and particular components was required. 
+  -	Scripts: The client-side JavaScript involved aspects including, but not limited too API calls, HTTP requests, DOM manipulation and utilising special JavaScript library which was Chart.js.
+
+A core piece of knowledge/skill is the ability to problem solve and knowing where to go to learn a piece of information. Problem solving is a huge component in coding and working on a project. Knowing how to research and search for a solution when a problem arises was essential. All the pieces needed to successfully build an Express JS application are very large and comprehensive, an important part of being able to use them is to know how to use the documentation to find the process for a piece of code. This process was a fundamental process in the application implementation plan. Understanding the breakdown of steps and knowing where to find the answers when facing a block was crucial. The ability to breakdown a problem into smaller steps was also key. This proved very useful when faced broad code errors not easily able to be pin pointed, understanding how to break them down the debug one step at time was an important process. During this application building, I found my debugging process was improved by reflecting on this breakdown process. 
+
+Communication amongst the team. This important soft skill was essential in our application implementation process. In the starting code process, we pair programmed which involved a lead coder and a navigator. During this process we both held these roles at different times and both roles involve communication. Some key components to this effective communication were the explanation of our own code, the communication of steps when in the navigation position, expressing problems when they arose and …
+
+
+
 
 #### [Sources]---
 1. [label](link)
@@ -413,7 +446,7 @@ console.log(countKeys) //=> 3
 
 ```
 
-for…in loop is a useful method however it returns based off the original protoype chain. In order to iterate on an object so that all JavaScript methods can be utilised on the object other enumerating iteration methods that will not affect the original object are useful. Object.entries() is a method that can be applied on an object that will return an array of key,value pairs. Similarly, Object.keys() returns a new array of the object’s keys
+for…in loop is a useful method however it returns based off the original protoype chain. In order to iterate on an object so that all JavaScript methods can be utilised on the object other enumerating iteration methods that will not affect the original object are useful. Object.entries() is a method that can be applied on an object that will return an array of key,value pairs. Similarly, Object.keys() returns a new array of the object’s keys. 
 
 ```js
 const iterationObject2 = {prop1: “val1”, prop2: “val2”, prop3: “val3”};
