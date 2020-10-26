@@ -109,11 +109,12 @@ In the process of this project myself and my partner needed a wide variety of kn
 -	Planning and documentation: The start of the project involved some initial planning which was done on a simple google doc. This involved talking through ideas and research and noting them down to form a basis of our application idea. Once an idea and them was decided we set up a Trello board to implement a basic, but clear development plan for the 2.5days of coding. For this process to be successful we needed to have a good planning focus and methodology in which we could outline an implementation plan. This ability is what gave the Hackathon a direction to work towards. Contained in the Trello board were cards for the Server and client-side work, cards for doing done and a backlog. Additionally, a card for some user story outlining proved useful for reference. A nice to have card was added when we determined certain features and components were better on this card given the short time frame. Whilst usually more detailed mock-ups and wireframes we accompany planning, we still implemented a simple wireframe for the main application dashboard, this enabled direction for the front-end creation. Knowledge of creating wireframes was necessary, and Figma was the tool of choice in this process. 
 -	MVC File Structure: Knowledge of the MVC architecture was required in this build process. This framework was the core architectural pattern of the application component separation. These being the Model, Views and Controller. The Model is the part of the application dealing and interacting with the database, the view is presenting of the data rendered on a user interface, and the Controller is the glue between Model and View where we can request data from our database(via the model) and then send a response to our view. Understanding the way this architecture works and operates together was required. In addition, another architecture component for an Express App was the Utilities, in order to keep our controller from getting to inflated, keeping logic in the utilities was beneficial. 
 -	CRUD application concepts: The type of application created in this Hackathon was a CRUD application. Knowledge of CRUD (Create, Read, Update, Delete) functions and paired with the corresponding HTTP request was needed. This required an understanding of HTTP routing and requests. As team we did face certain challenges with our PUT and DELETE requests, this was due to not fully grasping the link to client-side HTTP requests connecting to the server-side, particular with integrating this with our rendering engine of choice PUG. We were able to work through this as a team, and through research and refreshing our knowledge on these topics during the Hackathon process. 
+- JavaScript: Knowledge of fundamental JavaScript was key in this process as this was the core of the project, without this basis the following could not be implemented. 
 -	Server-side: A good knowledge basis for the following was required in order the create our server-side code. 
       -	Express: Web framework for Node. Core knowledge of setting up this framework and how it is implemented was needed. Express involved some heavy initial plumbing so understanding this process and how it connects was crucial. Along with this involved setting up Express routing. 
       -	Node: Understanding the basis of Node as a web server to process and deliver our data was needed and how these requests and responses were operating with routing. 
       -	Node Packages: These packages were utilised for a variety of application components, knowledge of using node packages and setting up the initializing of them was needed. 
-      -	MongoDb: NoSQL database. Knowledge of NoSQL databases proved assisting in utilised MongoDB as the document database. Understanding how to query the database and the methods to go about this was needed.
+      -	MongoDb: NoSQL database. Knowledge of databases particularly how NoSQL databases operate proved essential in utilising MongoDB as the document database. Understanding how to query the database and the methods to go about this was needed.
       -	Mongoose: In order to persist the data in our Mongo database Mongoose was integrated. Understanding the creation of Model via a Mongoose Schema and how to define a Schema was needed, along with how to query the DB via Mongoose.  
       -	View Rendering: Implementation of a rendering engine was needed to render our data to a user interface. Whilst Express-Handlebars were the initial rendering engine outlined, Pug JS was implemented due to its concise and clean structure. Understanding how to send the data to the view for rendering was needed, additional was implementation of adding styling to the Pug files. 
       -	Overall Plumbing: Implementing the basis plumbing and set up for the above components was needed for this application. An idea of their interaction and base set up is important, especially for troubleshooting if errors came along. 
@@ -126,14 +127,28 @@ A core piece of knowledge/skill is the ability to problem solve and knowing wher
 
 Communication amongst the team. This important soft skill was essential in our application implementation process. In the starting code process, we pair programmed which involved a lead coder and a navigator. During this process we both held these roles at different times and both roles involve communication. Some key components to this effective communication were the explanation of our own code, the communication of steps when in the navigation position, expressing problems when they arose and the ability to convey them to the other teammate. 
 
-
-
-
-#### [Sources]---
-1. [label](link)
----
-
 ## Q6 |With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature.
+
+In continuation of the aforementioned project in question 5, I would like to conduct a personal evaluation of my skills in relation to this project. 
+
+## Evaluation:
+
+### Git Workflow: 
+
+This part of the project was important as it was the management of the project version repository. In relation to this part of the project my knowledge of Git was at a level in which I could comfortable operate a feature branch and submit pull requests for merging. This aspect of the project proved to run smoothly due to mine and my partners knowledge of this component. Some improvements for next time would be clearer feature separation on branches(branches were used, but only a few), and attention to detail on meaningful commit messages. Commits were clear, but due to the time-frame, there were some not properly thought out. These improvements can easily be implemented in my next project.
+
+### Server-side: 
+
+Using Express, Node and MongoDB for this project, meant it involved a sound understanding of some heavy concepts. 
+
+A key part of this process of server-side code is the initial implementation of the Express application 'plumbing'. Whilst the initial set up of all the code requirement for Express, Node and MongoDB was done with minimal error, my core understanding of these pieces of code could definitely be improved upon. I felt this was a case of it is implemented and it works, but is my understanding as well rounded of how the code is interacting? Some examples would be reviewing how the middleware implemented, such as Cors, is working and how Mongoose connects to MongoDB.   
+
+The application had the basis of a CRUD application with a MVC architecture, I felt my knowledge of this concept was effective as a feature I worked on was building the basis CRUD for the tasks, during which the implementation time of this was swift and with minimal interruption. This process involves setting up the routes, the task controller which connects to the routes, the code in the task utilities, which houses the core logic of CRUD and connects queries the database via the model. Understanding the request and response parameters an important factor of this process. Database queries and implementing Mongoose for document modelling were realised 
+
+### Client-side:
+
+
+- 
 
 #### [Sources]---
 1. [label](link)
