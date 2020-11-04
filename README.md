@@ -117,11 +117,13 @@ Express JS is a server-side web framework
 #### [Sources]---
 1. [Reference](https://www.mongodb.com/mern-stack)
 2. [Reference](https://reactjs.org/tutorial/tutorial.html)
-3. [Reference](link)
-4. [Reference](link)
-5. [Reference](link)
-6. [Reference](link)
-7. [Reference](link)
+3. [Reference](https://blockchainsimplified.com/blog/what-is-mern-stack/#:~:text=MERN%20is%20the%20acronym%20for,to%20back%2Dend%20development%20components.)
+4. [Reference](https://levelup.gitconnected.com/a-complete-guide-build-a-scalable-3-tier-architecture-with-mern-stack-es6-ca129d7df805)
+5. [Reference](https://bezkoder.com/react-node-express-mongodb-mern-stack/#MERN_stack_Architecture)
+6. [Reference](https://www.sovereignconsult.com/blog/full-stack-development-what-is-mern-stack-and-its-advantages/)
+7. [Reference](https://www.educative.io/edpresso/what-is-mern-stack)
+8. [Reference](https://medium.com/front-end-weekly/painless-mern-stack-project-setup-react-nodejs-express-mongodb-weboack-b427f979e78a)
+9. [Reference](https://www.educative.io/edpresso/what-is-mern-stack)
 ---
 
 ## Q4 |A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
