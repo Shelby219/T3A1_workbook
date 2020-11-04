@@ -83,8 +83,45 @@ Through the perspective of software engineering, software quality implications i
 
 ## Q3 |Outline a standard high level structure for a MERN stack application and explain the components.
 
+The MERN stack is a JavaScript Stack utilised for building web applications and dynamic websites. It is made up of four technologies namely MongoDB, Express, React and Node.js which are all centered around JavaScript and make up a full-stack development framework. The way these technologies interact is based on a 3-tier architecture which is frontend, backend and database. 
+
+### Client-side
+#### React
+
+React is a library used for front-end development(the view layer), it operates efficiently and on a declarative basis for client- side application creation in HTML. The overall user interface gets created via small isolated pieces of code called components, which can connect to the server-side data and get sent to the browser for rendering. React being component based credits itself in being able to refresh only parts of the webpage that need refreshing on user interaction. React was built with powerful algorithms that determine when a certain component does need refreshing, meaning it has a powerful performance basis. React offers reusability of components and great control over the state of events, which is key in the dynamic updating of large amounts of data. 
+
+A basis example of a React Component, is one that takes in parameters called props (which can come from the server-side) and using that data returns a order of views to display via the render method, this method returns what you want displayed to the UI, more specifically the return is a React element. Most commonly used for rendering is JSX syntax which is JavaScript XML, which enables the power of JavaScript to be used in rendering just by putting any expression within braces. 
+
+
+### Server-side
+#### Express
+
+Express JS is a server-side web framework
+
+### Web Server
+#### Node.js
+
+### Database 
+#### MongoDB
+
+
+
+
+
+
+
+### MVC Architecture 
+
+
+
 #### [Sources]---
-1. [label](link)
+1. [Reference](https://www.mongodb.com/mern-stack)
+2. [Reference](https://reactjs.org/tutorial/tutorial.html)
+3. [Reference](link)
+4. [Reference](link)
+5. [Reference](link)
+6. [Reference](link)
+7. [Reference](link)
 ---
 
 ## Q4 |A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
