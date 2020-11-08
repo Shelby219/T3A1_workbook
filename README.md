@@ -85,13 +85,14 @@ Through the perspective of software engineering, software quality implications i
 
 The MERN stack is a JavaScript Stack utilised for building web applications and dynamic websites. It is made up of four technologies namely MongoDB, Express, React and Node.js which are all centered around JavaScript and make up a full-stack development framework. The way these technologies interact is based on a 3-tier architecture which is frontend, backend and database. Some key advantages of this stack are the technologies are free and open source, it covers the full development cycle and it supports the MVC architecture. 
 
+The MVC framework is the core architectural pattern of a MERN stack application. These being the Model, Views and Controller. The Model is the part of the application dealing and interacting with the database, the view is presenting of the data rendered on a user interface, and the Controller is the glue between Model and View where we can request data from our database (via the model) and then send a response to our view. 
+
 ### Client-side
 #### React
 
 React is a library used for front-end development(the view layer), it operates efficiently and on a declarative basis for client- side application creation in HTML. The overall user interface gets created via small isolated pieces of code called components, which can connect to the server-side data and get sent to the browser for rendering. React being component based credits itself in being able to refresh only parts of the webpage that need refreshing on user interaction. React was built with powerful algorithms that determine when a certain component does need refreshing, meaning it has a powerful performance basis. React offers reusability of components and great control over the state of events, which is key in the dynamic updating of large amounts of data. 
 
 A basis example of a React Component, is one that takes in parameters called props (which can come from the server-side) and using that data returns a order of views to display via the render method, this method returns what you want displayed to the UI, more specifically the return is a React element. Most commonly used for rendering is JSX syntax which is JavaScript XML, which enables the power of JavaScript to be used in rendering just by putting any expression within braces. 
-
 
 ### Server-side
 #### Express
@@ -101,7 +102,6 @@ Express JS is a back-end web framework described as fast, unopinionated and mini
 Express acts as apart of the controller portion of the MVC layer, this means it is the bridging layer between the view (client-side) and the model(database tier). 
 
 A core task of the controller layer is the accepting of the HTTP requests(GET, PUT, POST, DELETE) and determining the next course of action based on the type of request, url pattern or even based off the data sent from the body. Express then will determine what course of action is next required, whether that be a database query or other associated tasks. Then a response will be served to the browser which is usually a view sent for rendering with the retrieved data input in the rendering template.
-
 
 ### Web Server
 #### Node.js
@@ -116,15 +116,10 @@ Express itself is actually as node package and once is imported has all the need
 ### Database 
 #### MongoDB
 
-MongoDB is NoSQL document database which means each record is document key-value pair with similarities to JavaScript objects (how technically saves objects using binary JSON which is called BSON) and are saved in collections as opposed to tables. An advantage of this type of database is the insertion of data without a predefined schema, fast exchanges between client and server and the ability to store very large volumes of data. In MongoDB collections, documents can contain multiple fields, and the keys paired to each field is able to be any data type which can include arrays and even links to other documents. Mongo paired with Mongoose are the basis of the model tier of the MVC architecture. Mongoose is an object data modelling(ODM) module in node that enables schema creation and is used to integrate Mongo with the application.
+MongoDB is NoSQL document database which means each record is document key-value pair with similarities to JavaScript objects (technically it saves objects using JSON, however can also use binary JSON which is called BSON in the case of other data not JSON compatible) and are saved in collections as opposed to tables. An advantage of this type of database is the insertion of data without a predefined schema, fast exchanges between client and server and the ability to store very large volumes of data. In MongoDB collections, documents can contain multiple fields, and the keys paired to each field is able to be any data type which can include arrays and even links to other documents. Mongo paired with Mongoose are the basis of the model tier of the MVC architecture. Mongoose is an object data modelling(ODM) module in node that enables schema creation and is used to integrate Mongo with the application. Mongoose as a modelling environment, means when schemas are defined, additional data management can be done also such as forcing consistency and adding data validation which is important even for flexible schemas. Mongoose and Mongo are both installed via NPM and are used by intialisation and then establishing connections. Connecting to MongoDB via Mongoose just requires the URL of the database.
+Mongoose also provides the query methods, which are asynchronous so can either be accessed via the exec function which returns a promise or a callback function can be passed to the query and then handled as a promise. This data then retrieve is what can be passed through to the view fo rendering via Express routes as previously mentioned. 
 
-
-
-
-### MVC Architecture 
-
-
-
+ 
 #### [Sources]---
 1. [Reference](https://www.mongodb.com/mern-stack)
 2. [Reference](https://reactjs.org/tutorial/tutorial.html)
@@ -135,6 +130,7 @@ MongoDB is NoSQL document database which means each record is document key-value
 7. [Reference](https://www.educative.io/edpresso/what-is-mern-stack)
 8. [Reference](https://medium.com/front-end-weekly/painless-mern-stack-project-setup-react-nodejs-express-mongodb-weboack-b427f979e78a)
 9. [Reference](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
+10. [Reference](https://devcenter.heroku.com/articles/nodejs-mongoose)
 ---
 
 ## Q4 |A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
@@ -157,7 +153,7 @@ In the process of this project myself and my partner needed a wide variety of kn
 
 -	Git Workflow: For our Git workflow we decided on a forking workflow. This involved having a clear core understanding of the workflow and the processes and order of action, we both agreed we had. This was determined at the beginning stages of the Hackathon and a repository was set up immediately and forked by my partner. Setting up this workflow at the beginning and talking through the process gave us both a clear understanding of what we needed to do whilst working on particular area/features of the project. We were able to work on separate feature branches, then merge them into the main with very minimal merge conflicts due to keeping our communication front and centre in the Hackathon process. This meant during the timeframe the Git Workflow did not cause any issues or interruptions, which gave us the opportunity to focus on the application. 
 -	Planning and documentation: The start of the project involved some initial planning which was done on a simple google doc. This involved talking through ideas and research and noting them down to form a basis of our application idea. Once an idea and them was decided we set up a Trello board to implement a basic, but clear development plan for the 2.5days of coding. For this process to be successful we needed to have a good planning focus and methodology in which we could outline an implementation plan. This ability is what gave the Hackathon a direction to work towards. Contained in the Trello board were cards for the Server and client-side work, cards for doing done and a backlog. Additionally, a card for some user story outlining proved useful for reference. A nice to have card was added when we determined certain features and components were better on this card given the short time frame. Whilst usually more detailed mock-ups and wireframes we accompany planning, we still implemented a simple wireframe for the main application dashboard, this enabled direction for the front-end creation. Knowledge of creating wireframes was necessary, and Figma was the tool of choice in this process. 
--	MVC File Structure: Knowledge of the MVC architecture was required in this build process. This framework was the core architectural pattern of the application component separation. These being the Model, Views and Controller. The Model is the part of the application dealing and interacting with the database, the view is presenting of the data rendered on a user interface, and the Controller is the glue between Model and View where we can request data from our database(via the model) and then send a response to our view. Understanding the way this architecture works and operates together was required. In addition, another architecture component for an Express App was the Utilities, in order to keep our controller from getting to inflated, keeping logic in the utilities was beneficial. 
+-	MVC File Structure: Knowledge of the MVC architecture was required in this build process. This framework was the core architectural pattern of the application component separation. These being the Model, Views and Controller. The Model is the part of the application dealing and interacting with the database, the view is presenting of the data rendered on a user interface, and the Controller is the glue between Model and View where we can request data from our database(via the model) and then send a response to our view. Understanding the way this architecture works and operates together was required. In addition, another architecture component for an Express App was the Utilities, in order to keep our controller from getting too inflated, keeping logic in the utilities was beneficial. 
 -	CRUD application concepts: The type of application created in this Hackathon was a CRUD application. Knowledge of CRUD (Create, Read, Update, Delete) functions and paired with the corresponding HTTP request was needed. This required an understanding of HTTP routing and requests. As team we did face certain challenges with our PUT and DELETE requests, this was due to not fully grasping the link to client-side HTTP requests connecting to the server-side, particular with integrating this with our rendering engine of choice PUG. We were able to work through this as a team, and through research and refreshing our knowledge on these topics during the Hackathon process. 
 - JavaScript: Knowledge of fundamental JavaScript was key in this process as this was the core of the project, without this basis the following could not be implemented. 
 -	Server-side: A good knowledge basis for the following was required in order the create our server-side code. 
