@@ -83,7 +83,7 @@ Through the perspective of software engineering, software quality implications i
 
 ## Q3 |Outline a standard high level structure for a MERN stack application and explain the components.
 
-The MERN stack is a JavaScript Stack utilised for building web applications and dynamic websites. It is made up of four technologies namely MongoDB, Express, React and Node.js which are all centered around JavaScript and make up a full-stack development framework. The way these technologies interact is based on a 3-tier architecture which is frontend, backend and database. 
+The MERN stack is a JavaScript Stack utilised for building web applications and dynamic websites. It is made up of four technologies namely MongoDB, Express, React and Node.js which are all centered around JavaScript and make up a full-stack development framework. The way these technologies interact is based on a 3-tier architecture which is frontend, backend and database. Some key advantages of this stack are the technologies are free and open source, it covers the full development cycle and it supports the MVC architecture. 
 
 ### Client-side
 #### React
@@ -96,16 +96,27 @@ A basis example of a React Component, is one that takes in parameters called pro
 ### Server-side
 #### Express
 
-Express JS is a server-side web framework
+Express JS is a back-end web framework described as fast, unopinionated and minimal and it operates by running on top of Node JS. It is used as to simplify the task of writing server-side code, as it avoids having to use Node JS directly and writing server code from scratch. The benefits of Express include, modularisation, dynamic routing, additional support of middleware usage(ie. cookies, sessions and validation), and its emphasis on simplification means it makes web applications highly scalable and keep a simple code base. 
+
+Express acts as apart of the controller portion of the MVC layer, this means it is the bridging layer between the view (client-side) and the model(database tier). 
+
+A core task of the controller layer is the accepting of the HTTP requests(GET, PUT, POST, DELETE) and determining the next course of action based on the type of request, url pattern or even based off the data sent from the body. Express then will determine what course of action is next required, whether that be a database query or other associated tasks. Then a response will be served to the browser which is usually a view sent for rendering with the retrieved data input in the rendering template.
+
 
 ### Web Server
 #### Node.js
 
+Node JS is a back-end web server runtime environment allowing for development in JavaScript to be run outside the browser. This means JavaScript web applications can be built and run on a server, which allows for better scalability and performance optimisation. A key component to Node.js is the node package manager (NPM) which allows access to thousands of node modules which are free and reusable in the application and basically automate most of the building cycle. Node JS is the other part of the controller portion of the MVC architecture partnered with express. Once Node is installed and a package.json is initialised, utilisation of node packages is as simple as installing them via npm and importing using:
+
+```js
+   require()
+```
+Express itself is actually as node package and once is imported has all the needed methods for routing HTTP requests, middleware and rendering configuration and any other application modification for application behaviour.
+
 ### Database 
 #### MongoDB
 
-
-
+MongoDB is NoSQL document database which means each record is document key-value pair with similarities to JavaScript objects (how technically saves objects using binary JSON which is called BSON) and are saved in collections as opposed to tables. An advantage of this type of database is the insertion of data without a predefined schema, fast exchanges between client and server and the ability to store very large volumes of data. In MongoDB collections, documents can contain multiple fields, and the keys paired to each field is able to be any data type which can include arrays and even links to other documents. Mongo paired with Mongoose are the basis of the model tier of the MVC architecture. Mongoose is an object data modelling(ODM) module in node that enables schema creation and is used to integrate Mongo with the application.
 
 
 
@@ -123,7 +134,7 @@ Express JS is a server-side web framework
 6. [Reference](https://www.sovereignconsult.com/blog/full-stack-development-what-is-mern-stack-and-its-advantages/)
 7. [Reference](https://www.educative.io/edpresso/what-is-mern-stack)
 8. [Reference](https://medium.com/front-end-weekly/painless-mern-stack-project-setup-react-nodejs-express-mongodb-weboack-b427f979e78a)
-9. [Reference](https://www.educative.io/edpresso/what-is-mern-stack)
+9. [Reference](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
 ---
 
 ## Q4 |A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
