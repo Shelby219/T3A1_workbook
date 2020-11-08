@@ -135,8 +135,53 @@ Mongoose also provides the query methods, which are asynchronous so can either b
 
 ## Q4 |A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
+For a development project a variety of skills are needed from technology skills to soft skills. List below are some core components I feel is needed for a project. 
+
+### Planning
+
+In a project before code is even written the planning and documentation is such a core and important that involves multiple steps. Some of these steps include, but not limited too:
+
+- Purpose
+
+The step is a pivotal part of the project timeline and is essentially the most important. This involves obtaining from the client their needs for the website. The small business is paying for the service so is it important that the right questions are asked of the client to ensure the right information is extracted from them to create the best possible website for the client. The clients needs should be fully covered and specific details noted down. This can include asking questions regarding colour schemes, functionality, any specific implementations for the website and even asking if maybe there is other sites the client already likes to gage the direction the client wants to go in their own site. 
+
+- User Stories
+
+Being able to create a basis for user stories is important as it is essentially a walk through of the site and how to the site would be used. The basis of creating good user stories can come from the needs of the client, then once they are determined the developer would list out all the different user story components to do with user site navigation. User stories generate a clear understanding the website from the end user's perspective and are representative of the needs and wants of the target client base. 
+
+- Defining Features
+
+Determining site features is an important step as it is way to modularise the build process and determine a base MVP. Deciding on listed features is a way to assign tasks to certain team members, and also allocate which features are apart of the base MVP and which are possible future features that the client might not have the budget for at the current time. 
+
+- Agile Methodologies
+
+Familiarity with the Agile process is important and this is apart of the development process and workflow. The team might use different Agile framework such as Scrum or Kanban, but the basis fo the project management process is the same. It is the process whereby the project is broken up into several stages and involves evolving collaboration with the client through each iteration. The process starts with the determining the clients wants and the end user's needs and then the cycle of planning, executing and evaluating follows.  
+
+- Git Workflow
+
+Knowledge of Git and Git workflow is important and this point covers not only the version management of the project, but also how the team will be managing the development and production versions. This component involves knowledge of Git, a version control software such as GitHub and knowledge of the various workflow processes such as forking or feature branch. 
+
+- Design
+
+This component is apart of the initial planning process and covers multiple parts which can include knowledge of wireframing, mock ups, ERD and visual design. In the team their might be a designated website designer that would solely focus on this step in the development process. If this is the case then once this step is completely the wireframes and mock ups would be passed onto the developers. 
+
+### Building
+
+- Technologies
+
+Knowledge of software development technologies and how to use them together is needed for a project. There are multiple technology stacks available for website and web application creation. For example if the website required was a simple dynamic website, then knowledge for HTML, CSS and JavaScript would be ideal. HTML as the programming language for structuring the text, CSS for the styling, and JavaScript for the dynamic and interactive components of the webpage. If the needs of the client are a full-stack web application that requires a server and database then knowledge of a tech stack to fulfill this specification is needed. An example of this is the MERN stack which is a JavaScript Stack utilised for building web applications and is made up of four technologies namely MongoDB, Express, React and Node.js. The way these technologies interact is based on a 3-tier architecture which is frontend, backend and database and it covers the full development cycle and it supports the MVC architecture. To successfully build an application with this tech stack, requires knowledge of MongoDB as a NoSQL database, Node JS is a web server, Express as the server-side application framework and React as the view client-side rendering library. 
+
+- Testing 
+
+Testing is a very important part of the software development process and good test-driven development involves writing initial tests before actual code is written. Knowledge of how to write automatic testing is needed along with how to conduct manual testing and the corresponding record keeping of the manual tests. Some examples including Jest of Mocha which are JavaScript testing frameworks that can be implementing with dynamic website and applications. Jest in particular can be integrating with Node and React as well as additional technologies. Testing ensures correctness in a code base and an example would be testing CRUD routes to ensure they are working as intended. 
+
+- Deployment
+
+This is one of the last components in the development process, however it is still recommended to deploy early and deploy often. To successfully deploy would require knowledge of deployment platforms such as Netlify for static website and Heroku for web applications, and also knowledge of how the deployment process works and the configurations required. Additional knowledge can include but is not limited too custom Domain Names, setting up config vars, SSL certificates and ongoing site maintenance. 
+
+
 #### [Sources]---
-1. [label](link)
+1. [Reference](https://www.wrike.com/project-management-guide/faq/what-is-agile-methodology-in-project-management/)
 ---
 
 ## Q5 |With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges.
