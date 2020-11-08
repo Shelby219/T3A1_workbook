@@ -137,7 +137,7 @@ Mongoose also provides the query methods, which are asynchronous so can either b
 
 For a development project a variety of skills are needed from technology skills to soft skills. List below are some core components I feel is needed for a project. 
 
-### Planning
+#### Planning
 
 In a project before code is even written the planning and documentation is such a core and important that involves multiple steps. Some of these steps include, but not limited too:
 
@@ -165,7 +165,7 @@ Knowledge of Git and Git workflow is important and this point covers not only th
 
 This component is apart of the initial planning process and covers multiple parts which can include knowledge of wireframing, mock ups, ERD and visual design. In the team their might be a designated website designer that would solely focus on this step in the development process. If this is the case then once this step is completely the wireframes and mock ups would be passed onto the developers. 
 
-### Building
+#### Development
 
 - Technologies
 
