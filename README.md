@@ -49,9 +49,9 @@ Through the perspective of software engineering, software quality implications i
 
 Whilst not summarised in the software structural quality two important qualities to mention in apart of functional quality are: 
 
-- Usability: This factor is important as the user interface is what the users have visable to them. So ensuring good UI is extremely vital to quality software, key factors to ensure this is a simple UI and fast task execution.
+    - Usability: This factor is important as the user interface is what the users have visable to them. So ensuring good UI is extremely vital to quality software, key factors to ensure this is a simple UI and fast task execution.
 
-- Portability: This quality measures how usable a piece of software is in different environments. Ways to ensure portable code include regular testing of various platforms and imposing a strict coding standard.
+    - Portability: This quality measures how usable a piece of software is in different environments. Ways to ensure portable code include regular testing of various platforms and imposing a strict coding standard.
 
 - Software structural quality, which is the quality-in-use model. By extracting from ISO standards, CISQ (Consortium for Information & Software Quality) defined quality aspects at a source code level in order to support the functional level qualities, but also enabling measurement of quality in meeting these function requirements this determining if the software works as intended. These four important aspects are all derived from the original eight and involve them all, just at a more specified functional level. These aspects are:
 
