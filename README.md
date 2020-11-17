@@ -45,17 +45,13 @@ In summary, this workflow is great for the large projects operating on a release
 
 Through the perspective of software engineering, software quality implications involve two related, but separate concepts, these being;
 
-- Software functional quality, being the base product quality model.  ISO/IEC 25010 defines a set of eight software quality characteristics, measuring software through these aspects is to define what makes a product worthwhile amongst competitors and in relation to behaviour. These aspects are:
+- Software functional quality, being the base product quality model.  ISO/IEC 25010 defines a set of eight software quality characteristics, measuring software through these aspects is to define what makes a product worthwhile amongst competitors and in relation to behaviour. These aspects are: Functional Suitability, Performance Efficiency, Compatibility, Usability, Reliability, Security, Maintainability and Portability. 
 
-  1.	Functional Suitability
-  2.	Performance Efficiency*
-  3.	Compatibility
-  4.	Usability
-  5.	Reliability*
-  6.	Security*
-  7.	Maintainability*
-  8.	Portability. 
+Whilst not summarised in the software structural quality two important qualities to mention in apart of functional quality are: 
 
+- Usability: This factor is important as the user interface is what the users have visable to them. So ensuring good UI is extremely vital to quality software, key factors to ensure this is a simple UI and fast task execution.
+
+- Portability: This quality measures how usable a piece of software is in different environments. Ways to ensure portable code include regular testing of various platforms and imposing a strict coding standard.
 
 - Software structural quality, which is the quality-in-use model. By extracting from ISO standards, CISQ (Consortium for Information & Software Quality) defined quality aspects at a source code level in order to support the functional level qualities, but also enabling measurement of quality in meeting these function requirements this determining if the software works as intended. These four important aspects are all derived from the original eight and involve them all, just at a more specified functional level. These aspects are:
 
@@ -66,6 +62,8 @@ Through the perspective of software engineering, software quality implications i
   3.	Security: This is referring to protection in the case of security risks and how well this is executed. The likelihood of attackers breaching the software, interrupt processes and gain access to restricted information is a measure of the security quality and how well the code architecture was formed and put into practice. The measurement of this aspect is via ‘vulnerabilities’, which are known issues possibility resulting in a breach, the ability to detect them, the amount of these vulnerabilities found and the gravity of them indicate the overall security level. Other factors also include the resolution time taken to fix an issue, deployment of security updates and the actual amount of full system breaches as opposed to just vulnerability checks. 
 
   4.	Maintainability: This is referring to the ease in which software can be modified, utilised and adapted for alternative purposes and overall portability between environments and development teams. If compliance with software architecture practices and consistent high-quality code is produced across the board then easier streamlined maintenance is likely to be more achievable. Overall high-quality code is clean code that is consistent, easy to understand, well documented, is DRY, has good error handling and can be tested. 
+
+
 
 
 #### [Sources]---
